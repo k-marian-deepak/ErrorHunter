@@ -3,30 +3,12 @@ def print_numbers(n):
     i = 1
     while i <= n:
         print(i)
- 
-        i+= 1   
+        i += 1   #LogicError/SyntaxError: n -= 1 -> i += 1
+    exit() #To avoid returning None
 
 if __name__ == "__main__":
-    n= int(input("Enter the Number "))
-    res = print_numbers(n)
-    
- 
- 
-        i+= 1   
-if __name__ == "__main__":
-    num = int(input("Enter the Number: "))
+    num = int(input("Enter the Number "))
     res = print_numbers(num)
     print(res)
- 
-        i += 1   
 
-if __name__ == "__main__":
-     num = int(input("Enter the Number "))
-    print_numbers(num)
-    
- 
-    num = int(input("Enter the Number :"))
-    print_numbers(num)
- 
- 
- 
+# By: Deepak K M, 24UCS121, CSE_A

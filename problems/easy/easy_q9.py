@@ -1,22 +1,14 @@
 # Factorial of a Number: Write a program to calculate the factorial of a given number using a while loop.
 def factorial(n):
-    result = 1
-    while n > 0:
-        result *= n
-        n -= 1   
-    return result
+    if n == 1 or n == 0:
+       return 1
+    elif n < 1:
+       print("Factorial is not defied for negative Numbers")
+    else:
+      return n * factorial(n-1)
 
 if __name__ == "__main__":
- 
-    n= int(input("Enter the Number :"))
-    print(factorial(n))
-
- 
     num = int(input("Enter the Number :"))
- 
-    print(factorial(num))
- 
+    print("The Factorail of the number is:",factorial(num))
     
-     res=factorial(num)
-    print(res)
-     
+# By: Deepak K M, 24UCS121, CSE_A

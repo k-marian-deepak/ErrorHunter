@@ -1,36 +1,14 @@
 # Check Palindrome Number: Use a do-while loop to determine if a given number is a palindrome
 def is_palindrome(num):
-    original = num
- 
-    reverse = 0
- 
-    while True:
-        reverse = reverse * 10 + num % 10
-        num //= 10
-        if num != 0:
-            break 
- 
-    while num != 0:
-        reverse = reverse * 10 + num % 10
-        num //= 10
- 
- 
-    
- 
-    return reverse == original
- 
-    reverse = ''
-    while num != 0 :
-        reverse += str(num % 10)
-        num //= 10 
-    if original==int(reverse):
-        return "It is a Palindrome"
-    else:
-        return "It is not a Palindrome"
- 
+    #Logic modifed:
+    #The input is accepted as a string and checked if it is numeric or not
+    #if numeric then the palindrome check is done
+    print(f"The no. {nums} is a Palindrome" if nums.isnumeric() and nums == nums[::-1] else f"The no. {nums} is not a Palindrome")
+    exit()
 if __name__ == "__main__":
-    nums = int(input("Enter the Number: "))
+    nums = input("Enter the Number: ")
     res = is_palindrome(nums)
     print(res)
     
     
+# By: Deepak K M, 24UCS121, CSE_A

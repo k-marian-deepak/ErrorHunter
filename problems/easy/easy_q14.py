@@ -7,11 +7,11 @@ def vowel_or_consonant(char):
         'o': "Vowel",
         'u': "Vowel",
     }
-    return switch.get(char.lower(),"Constant")   
+    return switch.get(char, "Not a Vowel: A Consonant")   #The default case is been modified to mean it is a consonant
 if __name__ == "__main__":
-    characterInput  = input("Enter the charactrer : ")
-    if len(characterInput)==1:
-      res = vowel_or_consonant(characterInput)
-      print(res)
-    else:
-       print("Please enter exactly one character.")
+    #the DataType of the input is changed to string
+    characterInput  = input("Enter the charactrer : ").lower()
+    res = vowel_or_consonant(characterInput)
+    print(res)
+
+# By: Deepak K M, 24UCS121, CSE_A
